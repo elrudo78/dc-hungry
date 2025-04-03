@@ -158,3 +158,24 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables (although token should be in Replit Secrets)
+.env
+
+# Replit specific files (optional, but often not needed in repo)
+.replit
+# poetry.lock (if using poetry, might want to commit this though)
+# .upm/
+
+# Virtual environment folders (if you ever run locally)
+venv/
+env/
+.venv/
+
+# Old backup file (we probably don't need this on GitHub)
+_old_main.py
