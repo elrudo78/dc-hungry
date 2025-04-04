@@ -117,13 +117,7 @@ class GeneralCog(commands.Cog, name="General"):
             f"Starts a new Unscramble game.\n*Requires '{config.MOD_ROLE_NAME}' role.*",
             inline=False  # Each command on its own line
         )
-        embed.add_field(
-            name=f"`{config.COMMAND_PREFIX}hint`",
-            value=
-            (f"Get a hint for the current Unscramble game (costs {config.HINT_PENALTY_POINTS} points).\n"
-             f"*Requires '{config.MOD_ROLE_NAME}' role.*"
-             ),  # Adjust role if hint is for everyone
-            inline=False)
+
         embed.add_field(
             name=f"`{config.COMMAND_PREFIX}leaderboard` (or `lb`)",
             value=
