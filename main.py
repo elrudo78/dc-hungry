@@ -7,7 +7,9 @@ import os
 import logging
 import asyncio
 import config  # Import our configuration file
-from replit import db  # Still needed for token fallback check maybe, or direct access if needed elsewhere
+token = os.environ.get('DISCORD_TOKEN')
+if not token:
+    raise ValueError("No DISCORD_TOKEN found in environment variables!")
 
 # --- Logging Setup ---
 # More robust logging than just print()
