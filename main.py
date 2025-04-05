@@ -5,7 +5,6 @@ import discord
 from discord.ext import commands
 from config import (  # <-- ADD THIS IMPORT
     TIME_LIMIT_SECONDS,
-    HINT_PENALTY_POINTS,
     LEADERBOARD_DB_KEY,
     EMBED_COLOR,
     MOD_ROLE_NAME
