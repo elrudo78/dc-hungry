@@ -3,12 +3,7 @@ import traceback
 import asyncio
 import discord
 from discord.ext import commands
-from config import (  # <-- ADD THIS IMPORT
-    TIME_LIMIT_SECONDS,
-    LEADERBOARD_DB_KEY,
-    EMBED_COLOR,
-    MOD_ROLE_NAME
-)
+import config
 
 try:
     print("Attempting to load token and connect...")
